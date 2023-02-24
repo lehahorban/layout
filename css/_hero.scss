@@ -1,0 +1,326 @@
+.hero {
+  padding-top: 24px;
+}
+.hero-wrapp {
+  position: relative;
+}
+.hero-image_wrapp {
+  position: relative;
+}
+.hero-image {
+  // width: 1040px;
+  height: 553px;
+}
+.hero-image_item {
+  position: absolute;
+  width: 422px;
+  height: 65px;
+  bottom: 0;
+  right: 0;
+}
+.hero-circle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  left: 32px;
+  top: 270px;
+  background: rgba(255, 242, 0, 0.7);
+  border-radius: 100%;
+}
+
+.hero-text {
+  // width: 169px;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 116%; /* 29/25 */
+  color: $color-text;
+  text-align: center;
+}
+
+.hero-text-tour {
+  margin-top: 16px;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114.285714%; /* 16/14 */
+  text-align: center;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.hero-text-cod {
+  margin-top: 7px;
+  font-family: "Trebuchet MS";
+  font-size: 24px;
+  line-height: 28/24;
+
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $color-text;
+  color: $background;
+}
+
+.hotel-wrapp {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 23px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-top: 23px;
+  }
+}
+.hotel-title {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  color: $color-text;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.hotel-stars {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+.hotel-stars_icon {
+  width: 27px;
+  height: 26px;
+  margin-left: 3px;
+}
+
+.hotel-prise {
+  margin-left: 20px;
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  color: $color-text;
+}
+
+.rating-wrapp {
+  display: flex;
+  align-items: center;
+  margin-top: 31px;
+}
+
+.rating-grade {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114.285714%; /* 16/14 */
+  color: $color-text;
+}
+
+.rating-review {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 114.285714%; /* 16/14 */
+  color: $color-text;
+}
+
+.rating-total_wrapp {
+  width: 52px;
+  height: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 32px;
+  background-color: $color-primary;
+}
+.rating-total {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 116.666667%;
+  color: $background;
+}
+.rating-list {
+  display: flex;
+  margin-left: 24px;
+}
+
+.rating-item {
+  margin-left: 16px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+.rating-text {
+  font-family: "Arial";
+  font-size: 12px;
+  line-height: 116.666667%; /* 14/12 */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.rating-value {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 116.666667%; /* 21/18 */
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: $color-text;
+}
+
+.quantity-wrapp {
+  @media screen and (min-width: 480px) {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: block;
+    position: absolute;
+    width: 144px;
+    bottom: 14px;
+    right: 114px;
+  }
+}
+
+.quantity-value {
+  font-family: "Trebuchet MS";
+  font-size: 88px;
+  line-height: 115.909091%; /* 102/88 */
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  color: $color-text-secondary;
+}
+
+.quantity-text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 103.333333%; /* 31/30 */
+  color: $color-text;
+}
+
+.rest-wrapp {
+  @media screen and (min-width: 480px) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    margin-top: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    margin-top: 48px;
+  }
+}
+.rest-right {
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 30px;
+    margin-top: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 40px;
+    margin-top: 0;
+  }
+}
+.rest_image {
+  // width: 500px;
+  height: 280px;
+}
+
+.rest-text_wrapp {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 24px;
+}
+
+.rest-text {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  color: $color-text;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.rest-value {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  color: $color-text;
+}
+
+.rest-text-right {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 130%;
+  color: #cb0000;
+  border-bottom: 1px solid rgba(203, 0, 0, 0.25);
+}
+
+.rest-text_item {
+  margin-top: 10px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19/14;
+  color: $color-text;
+}
+
+.rest-text-item_wrapp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rest-value_item {
+  font-family: "Trebuchet MS";
+  font-size: 20px;
+  line-height: 115%; /* 23/20 */
+  color: $color-text-secondary;
+  text-decoration: line-through;
+  text-decoration-color: #cb0000;
+}

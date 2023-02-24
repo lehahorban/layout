@@ -1,0 +1,209 @@
+@import "./variables";
+.about {
+  @media screen and (min-width: 480px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 64px;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 24px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  //   justify-content: space-between;
+}
+
+// .about-left_wrapp {
+//   width: 776px;
+// }
+
+.about-left-title {
+  font-family: "Trebuchet MS";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 130%;
+  color: $color-text;
+}
+
+.about-left-title_question {
+  margin-top: 24px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 130%;
+  color: $color-text;
+}
+
+.about-left-title_beauty {
+  margin-top: 24px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 130%;
+  color: $color-text;
+}
+
+.about-left_text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135.714286%; /* 19/14 */
+  color: $color-text;
+}
+.about-left-text_bold {
+  @extend .about-left_text;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+.about-left_text-indent-one {
+  margin-top: 24px;
+}
+
+.about-left_text-indent-two {
+  margin-top: 8px;
+}
+
+.about-left_text-italic {
+  padding-left: 16px;
+  margin-top: 33px;
+  margin-left: 48px;
+  font-family: "Arial";
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135.714286%; /* 19/14 */
+  color: #000000;
+  border-left: 8px solid $color-primary;
+}
+.about-right_wrapp {
+  @media screen and (min-width: 480px) {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    // width: 227px;
+    margin-left: 37px;
+    //   margin-left: auto;
+    margin-top: 353px;
+  }
+}
+
+.human-healtht_value {
+  font-family: "Trebuchet MS";
+  font-size: 100px;
+  line-height: 116%; /* 116/100 */
+  letter-spacing: -0.05em;
+  color: $color-text-secondary;
+}
+
+.human-healtht_text {
+  // width: 224px;
+  margin-top: 4px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 103.333333%; /* 31/30 */
+  color: $color-text;
+}
+
+.human-healtht_descript {
+  // width: 216px;
+  margin-top: 8px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 125%; /* 25/20 */
+  color: $color-text-secondary;
+}
+
+.table-wrapp {
+  // width: 776px;
+  padding: 16px 16px 16px 16px;
+  margin-top: 24px;
+}
+
+.container-table {
+  display: flex;
+  flex-direction: column;
+}
+.header-row {
+  background-color: #f2f2f2;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  padding: 8px;
+}
+.row-bottom {
+  border-bottom: 1px solid $border;
+}
+.col {
+  flex: 1;
+  padding: 16px 16px 16px 0;
+}
+
+.row-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 142.857143%; /* 20/14 */
+  letter-spacing: 0.1px;
+  color: $color-text;
+}
+
+.col-text {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 142.857143%; /* 20/14 */
+  letter-spacing: 0.1px;
+  color: $color-text;
+}
+
+.signs {
+  margin-top: 24px;
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 135.714286%; /* 19/14 */
+  color: $color-text;
+}
+
+.signs-list {
+  margin-left: 10px;
+  margin-top: 8px;
+  list-style: outside;
+}
+
+.signs-item {
+  margin-top: 8px;
+  &:first-child {
+    margin-top: 0;
+  }
+}

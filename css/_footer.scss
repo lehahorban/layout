@@ -1,0 +1,29 @@
+@import "./variables";
+
+.footer {
+  padding-top: 24px;
+  padding-bottom: 23px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-text {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 141.666667%; /* 17/12 */
+  color: $color-text;
+  span {
+    color: #0059ac;
+  }
+}
+
+.footer-link-wrapp {
+  display: flex;
+}
+
+.footer-link {
+  margin-right: 16px;
+}
